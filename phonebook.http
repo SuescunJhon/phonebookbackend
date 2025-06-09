@@ -1,0 +1,27 @@
+@host=http://localhost:3001
+@persons=/api/persons
+@info=/info
+
+GET {{host}}{{persons}}
+
+###
+
+GET {{host}}{{persons}}/10
+
+###
+
+DELETE {{host}}{{persons}}/1
+
+###
+
+POST {{host}}{{persons}}
+Content-Type: application/json
+
+{
+  "name": "Stefany Velasco",
+  "number": "332123432"
+}
+
+###
+
+GET {{host}}{{info}}
