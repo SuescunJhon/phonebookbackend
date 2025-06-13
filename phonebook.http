@@ -6,11 +6,11 @@ GET {{host}}{{persons}}
 
 ###
 
-GET {{host}}{{persons}}/10
+GET {{host}}{{persons}}/684a763d2a96429d41b16ee5
 
 ###
 
-DELETE {{host}}{{persons}}/1
+DELETE {{host}}{{persons}}/684a1c6d7af54b1bfad37527
 
 ###
 
@@ -18,9 +18,16 @@ POST {{host}}{{persons}}
 Content-Type: application/json
 
 {
-  "name": "Stefany Velasco",
-  "number": "332123432"
+  "name": "Daniela Campo",
+  "number": "040-3321234"
 }
+
+###
+
+PUT {{host}}{{persons}}/684a763d2a96429d41b16ee5
+Content-Type: application/json
+
+{ "name": "Daniela Campo", "number": "040-6633234"}
 
 ###
 
